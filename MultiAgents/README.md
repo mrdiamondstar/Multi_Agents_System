@@ -1,5 +1,5 @@
 
-🧠 LangGraph Multi‑Agent System (Industry‑Ready)
+LangGraph Multi‑Agent System (Industry‑Ready)
 📌 Project Overview
 This project demonstrates an industry‑ready multi‑agent system built using LangGraph and LangChain. Instead of using one large monolithic LLM to do everything, we divide responsibilities among specialized agents such as:
 
@@ -17,7 +17,7 @@ Each agent focuses on a single task, while LangGraph controls how data flows bet
 
 Think of this project like a software development team where each role knows exactly when to step in and what to do.
 
-🎯 Why Multi‑Agent Systems?
+Why Multi‑Agent Systems?
 Single‑agent LLMs struggle with:
 
 Long reasoning chains
@@ -38,7 +38,8 @@ Allowing feedback loops
 
 Improving reliability and explainability
 
-🧩 Technologies Used
+Technologies Used
+
 Python 3.12+
 
 LangGraph – workflow orchestration
@@ -49,7 +50,7 @@ OpenAI Chat Models (e.g. gpt‑4o‑mini)
 
 TypedDict – strict state control
 
-🗂️ Project Architecture
+Project Architecture
 User Input
    ↓
 Manager Agent
@@ -59,7 +60,7 @@ Planner → Researcher → Coder → Reviewer
  Final Output
 The Manager Agent decides which agent runs next based on the current state.
 
-📦 State Definition (Single Source of Truth)
+State Definition (Single Source of Truth)
 The entire workflow depends on a shared AgentState object.
 
 What is State?
@@ -92,7 +93,7 @@ review – validation & fixes
 
 next – next agent name
 
-🧠 Agents Explained (Deep Dive)
+Agents Explained (Deep Dive)
 1️⃣ Planner Agent
 Responsibility:
 
@@ -213,7 +214,7 @@ graph.add_conditional_edges(
 )
 This enables decision‑based execution.
 
-▶️ How Execution Works (Step‑by‑Step)
+ How Execution Works (Step‑by‑Step)
 User provides input
 
 State is initialized
@@ -230,7 +231,7 @@ Loop continues until END
 
 This is not a linear pipeline, it is a controlled loop.
 
-🚀 How to Run the Project
+ How to Run the Project
 1️⃣ Install Dependencies
 pip install langgraph langchain langchain-openai
 2️⃣ Set API Key
@@ -252,7 +253,7 @@ Add logging per agent
 
 Plug monitoring tools easily
 
-🏭 Production Readiness
+ Production Readiness
 This architecture supports:
 
 Tool calling
@@ -275,12 +276,12 @@ Enterprise copilots
 
 Autonomous workflows
 
-🧠 Key Takeaway
+ Key Takeaway
 LangGraph turns LLMs from chatbots into controlled systems.
 
 This project shows how to build scalable, debuggable, and professional multi‑agent AI workflows.
 
-📌 Next Improvements
+Next Improvements
 Add memory (vector store)
 
 Add tools (search, code execution)
@@ -289,7 +290,7 @@ Add async agents
 
 Add UI (Streamlit / FastAPI)
 
-🔥 You now have a real‑world, industry‑grade LangGraph multi‑agent system.
+ You now have a real‑world, industry‑grade LangGraph multi‑agent system.
 
 Bro, I’ve created a full professional README for your LangGraph multi-agent code in the canvas 🧠📘
 
