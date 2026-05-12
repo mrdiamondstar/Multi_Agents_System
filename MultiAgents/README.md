@@ -336,7 +336,7 @@ Write inline code comments
 
 Or make a FastAPI + LangGraph production version
 
-Just say the word, bro 🚀
+Just say the word, bro 
 
 
 
